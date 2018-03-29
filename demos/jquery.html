@@ -69,8 +69,9 @@
 </nav>
 
 <script> 
-$(".menu-toggle").on("click", function(){
-	$(this).next(".menu").slideToggle();
+$(".menu-toggle").click(function(){
+  $(".menu").slideUp(); // Close any open menus
+	$(this).next('.menu').slideDown();
 });
 </script>
 
